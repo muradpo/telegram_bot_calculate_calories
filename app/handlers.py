@@ -419,38 +419,3 @@ async def recommend(message: Message, state: FSMContext):
             f"Это сожжёт ~{minutes * burn} ккал"
         )
 
-# # /start
-# # @router.message(CommandStart())
-# # async def cmd_start(message: Message):
-# #     await message.answer(
-# #         f'Привет 👋\n'
-# #         f'Твой ID: {message.from_user.id}\n'
-# #         f'Имя: {message.from_user.first_name}',
-# #         reply_markup=kb.main   # ✅ reply-клавиатура
-# #     )
-
-
-
-# # обработка фото
-# @router.message(F.photo)
-# async def handle_photo(message: Message):
-#     await message.answer(
-#         f"ID фото:\n{message.photo[-1].file_id}"
-#     )
-
-
-# # команда /get_photo
-# # @router.message(Command("get_photo"))
-# # async def send_photo(message: Message):
-# #     await message.answer_photo(
-# #         photo="https://telegram.org/img/t_logo.png",
-# #         caption="Это логотип Telegram",
-# #         reply_markup=kb.settings   # ✅ inline-клавиатура
-# #     )
-
-# # @router.callback_query(F.data == 'catalog')
-# # async def catalog(callback: CallbackQuery):
-# #     await callback.answer('Вы выбрали каталог', show_alert = True)
-# #     await callback.message.edit_text('привет', reply_markup = await kb.inline_cars())
-
-
