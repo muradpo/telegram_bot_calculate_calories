@@ -1,0 +1,7 @@
+aiogram==3.24.0
+aiohttp==3.13.2
+requests
+python-dotenv
+pydantic==2.12.5
+pydantic_settings==2.12.0
+matplotlib==3.10.8
